@@ -18,12 +18,12 @@ OCR Challenge (문자인식)
 
 
 # Code procedure
-00.Data_Aug
-01.Baseline_CRNN
-02.Clova_Github
-03.Abinet
-04.Ensemble
-05.Post_Processing
+00.Data_Aug <br>
+01.Baseline_CRNN <br>
+02.Clova_Github <br>
+03.Abinet <br>
+04.Ensemble <br>
+05.Post_Processing <br>
 
 
 # Data augmentation
