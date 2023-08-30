@@ -1,7 +1,7 @@
-#--------------------------------------------------------------------
+# Overview
 팀명 : Telepix 
 팀원 : 박재완, 정영상, Hagai
-순위 : 19위 
+순위 : 19위 / 1050
 
 폴더별 실행순서 
 
@@ -13,27 +13,23 @@
 05.Post_Processing
 
 
-#-----------------------------------------------------------------------
-data augmentation
+# data augmentation
 00.Data_Aug/0.data_aug_v1.ipynb 참조 
 
 
-#-------------------------------------------------------------------------
-model 1 : resnet50 + rnn
+# model 1 : resnet50 + rnn
 
 # 학습 & 추론 
 01.Baseline_CRNN/[OCR]_[MODEL_1]_res50_rcnn.ipynb 참조 및 실행 
 
-#-------------------------------------------------------------------------
-model 2 : resnet152 + rnn 
+# model 2 : resnet152 + rnn 
 
 # 학습 & 추론 
 01.Baseline_CRNN/[OCR]_[MODEL_2]_res152_rcnn.ipynb 참조 및 실행 
 
-#-------------------------------------------------------------------------
-model 3 : clova_tps_resnet_bilstm_ctc
+# model 3 : clova_tps_resnet_bilstm_ctc
 
-# 학습코드 
+* 학습코드 
 cd /02.Clova_Github/
 python train.py \
 --manualSeed 3333 \
@@ -45,7 +41,7 @@ python train.py \
 --SequenceModeling BiLSTM \
 --Prediction CTC
 
-# 추론코드 
+* 추론코드 
 cd /02.Clova_Github/
 python demo.py \
 --sig 1017-6 \
@@ -83,20 +79,15 @@ python demo.py \
 --image_folder /mnt/e/01.Eric/01.Dataset/07.Dacon/test_sharpened/test_sharpened \
 --saved_model ../06.Model_Weights/TPS-VGG-BiLSTM-Attn-Seed1017_77999_best_accuracy.pth
 
-#-------------------------------------------------------------------------
 model 5 : abinet 
 03.Abinet/main.sh 참조
 
 
-
-#-------------------------------------------------------------------------
-Ensemble 
+# Ensemble 
 04.Ensemble/04_0.ensemble_prepare_clova _v3.ipynb 참조 
 
 
-
-#-------------------------------------------------------------------------
-Post-Processing
+# Post-Processing
 05.Post_Processing_1.py 참조 
 
 
