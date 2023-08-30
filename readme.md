@@ -26,7 +26,7 @@ OCR Challenge (문자인식)
 05.Post_Processing
 
 
-# data augmentation
+# Data augmentation
 00.Data_Aug/0.data_aug_v1.ipynb 참조 
 
 
